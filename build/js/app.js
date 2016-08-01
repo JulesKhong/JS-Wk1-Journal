@@ -36,6 +36,15 @@ Entry.prototype.consonants = function() {
   return consonants.length;
 };
 
+Entry.prototype.getTeaser = function() {
+var teaser = [];
+var words = this.body.split(' ');
+  for (i = 0; i < 8; i++) {
+    teaser.push(words.shift());
+  }
+  return teaser.join(" ");
+};
+
 exports.entryModule = Entry;
 
 },{}],2:[function(require,module,exports){
@@ -55,6 +64,8 @@ $(document).ready(function() {
       result = blogEntry.vowels();
     } else if (numberOf === "consonants") {
       result = blogEntry.consonants();
+    } else if (numberOf === "teaser") {
+      result = blogEntry.getTeaser();
     } else {
       result = 0;
     }

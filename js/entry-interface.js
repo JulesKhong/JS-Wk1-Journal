@@ -14,6 +14,8 @@ $(document).ready(function() {
       result = blogEntry.vowels();
     } else if (numberOf === "consonants") {
       result = blogEntry.consonants();
+    } else if (numberOf === "teaser") {
+      result = blogEntry.getTeaser();
     } else {
       result = 0;
     }
