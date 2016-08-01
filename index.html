@@ -11,11 +11,19 @@
     <div class="container">
       <form class="form-group" id='entry-form'>
         <label for="title">Enter your title</label>
-        <input type="text" id = 'title'>
+        <input type="text" id ='title'>
         <label for="body">Enter a blog entry</label>
-        <textarea type="text" id = 'body'>
-        <button type="submit">Submit</button>
+        <textarea type="text" id ='body'></textarea>
+        <select class="form-control" id="number-of">
+          <option value="words">Word Count</option>
+          <option value="vowels">Number of Vowels</option>
+          <option value="consonants">Number of Consonants</option>
+        </select>
+        <button class="btn btn-default" type="submit">Submit</button>
       </form>
+      <div id="result">
+        
+      </div>
     </div>
   </body>
 </html>

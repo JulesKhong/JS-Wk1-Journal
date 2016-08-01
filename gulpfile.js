@@ -40,7 +40,7 @@ gulp.task("build", ['clean'], function() {
   }
 });
 
-// // used to debug our code
+// used to debug our code
 gulp.task('jshint', function() {
   return gulp.src(['js/*.js'])
   .pipe(jshint())
